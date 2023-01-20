@@ -89,7 +89,7 @@ const sistema = setInterval(() => {
         nuvem3.style.left = (`${nuvem3Position}px`)
         nuvem3.style.animation = (`none`)
     }
-}, 10)
+}, 100)
 
 //CLICK JUMP ---------------------------------
 
