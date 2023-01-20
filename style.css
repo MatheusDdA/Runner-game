@@ -1,0 +1,149 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.tela {
+    border: solid 2px black;
+    border-bottom: solid 8px #5C5C5C;
+    margin: 20px;
+    width: calc(100% - 40px);
+    max-width: 600px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87CEEB, #E0F6FF);
+}
+
+/* OBJETOS ---------------------------------*/
+.spike {
+    position: absolute;
+    width: 60px;
+    bottom: 0px;
+    z-index: 1;
+}
+
+.bricks {
+    position: absolute;
+    width: 60px;
+    bottom: 0px;
+    z-index: 2;
+}
+
+.BrAni {
+    animation: bricks-move 1s infinite linear;
+}
+
+.recuo {
+    right: -25%;
+}
+
+@keyframes bricks-move {
+    from {
+        right: -10%;
+    }
+
+    to {
+        right: 110%;
+    }
+}
+
+/*RELOAD-----------------------------------*/
+
+.reload {
+    height: 75px;
+    visibility: hidden;
+}
+
+
+.reloF {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    animation: reload-ani infinite 1s;
+}
+
+@keyframes reload-ani {
+    0% {
+        transform: scale(1.0);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+/*HERO-------------------------------------*/
+
+.hero {
+    position: absolute;
+    height: 150px;
+    bottom: 0px;
+    margin-bottom: 0;
+    visibility: visible;
+}
+
+.hero-death {
+    position: absolute;
+    height: 150px;
+    bottom: 0px;
+    margin-bottom: 0;
+    visibility: hidden;
+}
+
+.jump {
+    animation: hero-jump 600ms ease;
+}
+
+@keyframes hero-jump {
+    0% {
+        bottom: 0px;
+    }
+
+    40% {
+        bottom: 50px;
+    }
+
+    60% {
+        bottom: 50px;
+    }
+
+    100% {
+        bottom: -5px;
+    }
+}
+
+/*NUVENS---------------------------------------*/
+.nuvem1 {
+    position: absolute;
+    height: 150px;
+    bottom: 250px;
+    animation: nuvens infinite 15s linear;
+}
+
+.nuvem2 {
+    position: absolute;
+    height: 150px;
+    bottom: 350px;
+    animation: nuvens infinite 20s linear;
+}
+
+.nuvem3 {
+    position: absolute;
+    height: 130px;
+    bottom: 300px;
+    animation: nuvens infinite 25s linear;
+}
+
+@keyframes nuvens {
+    from {
+        right: -40%;
+    }
+
+    to {
+        right: 110%;
+    }
+}
