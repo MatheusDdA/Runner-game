@@ -3,11 +3,14 @@ body {
     padding: 0px;
     display: flex;
     justify-content: center;
+    background-size: 90px;
+    background-repeat: repeat;
+    background-image: url(./imgs/fundo.png);
 }
 
 .tela {
     border: solid 2px black;
-    border-bottom: solid 8px #5C5C5C;
+    border-bottom: solid 8px #2e2925;
     margin: 20px;
     width: calc(100% - 40px);
     max-width: 600px;
